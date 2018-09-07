@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/
+cloud_storage/src/main/resources/static/
+fastdfs/.mvn/
+fastdfs/mvnw
+fastdfs/mvnw.cmd
+fastdfs/src/main/resources/static/
+fastdfs/src/main/resources/templates/
+storage.iml
