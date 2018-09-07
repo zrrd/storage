@@ -1,0 +1,12 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.learn.cloud_storage.query.steamParty.mapper.GameQueryMapper">
+  <select id="highScoreList" resultType="cn.learn.cloud_storage.query.steamParty.dto.GameDto">
+    SELECT `name`,price,publish_date,score
+    FROM game
+    WHERE game.score > #{score}
+  </select>
+  <select id="list" resultType="cn.learn.cloud_storage.query.steamParty.dto.GameDto">
+    SELECT * FROM game
+  </select>
+</mapper>
